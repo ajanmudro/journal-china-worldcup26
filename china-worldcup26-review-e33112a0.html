@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+    <title>世界杯知识库 · 持续关注与收藏指南</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #f9f6f0;
+            font-family: 'Georgia', 'Palatino Linotype', 'Noto Serif SC', 'Source Han Serif SC', 'Times New Roman', serif;
+            color: #2c2b28;
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fefcf7;
+            padding: 50px 55px 60px;
+            border-radius: 28px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.03), 0 2px 6px rgba(160, 140, 110, 0.08);
+        }
+
+        /* 目录感布局 —— 使用清晰的标题层级与分隔线 */
+        .section-divider {
+            border: none;
+            border-top: 1px solid #e2d9cc;
+            margin: 2.6em 0 1.8em;
+        }
+
+        h1 {
+            font-weight: normal;
+            font-size: 2.4rem;
+            letter-spacing: 0.01em;
+            margin-bottom: 0.15em;
+            color: #2b2a27;
+            border-left: 7px solid #b7a182;
+            padding-left: 22px;
+        }
+        .subhead {
+            font-size: 1rem;
+            color: #736b5d;
+            margin-bottom: 2.2rem;
+            padding-left: 30px;
+            font-style: italic;
+        }
+
+        h2 {
+            font-weight: normal;
+            font-size: 1.6rem;
+            margin: 1.6em 0 0.6em;
+            color: #3e3a33;
+            border-bottom: 1px dashed #d9cfbc;
+            padding-bottom: 6px;
+        }
+        h3 {
+            font-weight: normal;
+            font-size: 1.2rem;
+            margin: 1.3em 0 0.4em;
+            color: #4d473b;
+        }
+
+        p {
+            margin: 0.85em 0;
+            text-align: justify;
+        }
+
+        a {
+            color: #7f6b4f;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 0.5px;
+            transition: color 0.15s ease;
+        }
+        a:hover {
+            color: #a5855e;
+            text-decoration-thickness: 1px;
+        }
+
+        /* 提示框 / 引用块 */
+        .callout-box {
+            background: #f3efe7;
+            border-left: 5px solid #bfaa8b;
+            padding: 18px 24px;
+            margin: 1.5em 0;
+            border-radius: 0 12px 12px 0;
+            font-size: 0.98rem;
+        }
+        .callout-box strong {
+            color: #4f4537;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin: 1.6em 0 1em;
+        }
+        .info-card {
+            background: #f8f4ed;
+            border-radius: 16px;
+            padding: 20px 22px;
+            border: 1px solid #e6dbcc;
+            transition: box-shadow 0.2s;
+        }
+        .info-card:hover {
+            box-shadow: 0 4px 12px rgba(160, 135, 100, 0.08);
+        }
+        .info-card h4 {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #4f4537;
+        }
+        .info-card p {
+            font-size: 0.95rem;
+            margin: 0.4em 0;
+        }
+        .info-card a {
+            font-weight: normal;
+        }
+
+        .faq-item {
+            margin: 1.1em 0;
+        }
+        .faq-item .q {
+            font-weight: 600;
+            color: #4a4035;
+        }
+        .faq-item .a {
+            margin-left: 0.5em;
+            color: #3f3b33;
+        }
+
+        .footer-note {
+            margin-top: 3.2em;
+            padding-top: 1.2em;
+            border-top: 1px solid #e1d5c3;
+            font-size: 0.9rem;
+            color: #6f6658;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .footer-note span {
+            opacity: 0.7;
+        }
+
+        @media (max-width: 680px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 1.8rem;
+                padding-left: 16px;
+                border-left-width: 5px;
+            }
+            .subhead {
+                font-size: 0.9rem;
+                padding-left: 21px;
+            }
+            .info-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+            .callout-box {
+                padding: 14px 18px;
+            }
+        }
+        @media (max-width: 450px) {
+            body {
+                padding: 16px 12px;
+            }
+            .container {
+                padding: 24px 14px;
+                border-radius: 20px;
+            }
+            h2 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- hero / 标题区 -->
+    <h1>世界杯 · 知识整理与持续关注</h1>
+    <div class="subhead">再次访问 · 收藏 · 信息入口</div>
+
+    <p style="margin-top: 0.2em;">
+        对许多关注足球的读者来说，<a href="https://china-worldcup26.com">世界杯</a>不仅是一段赛程，更是一套持续更新的知识集合。无论你是第一次了解，还是想重新整理收藏夹里的资料，这里都提供了一份结构化的参考页面——方便你随时回看、补充或分享。
+    </p>
+
+    <!-- 说明区 -->
+    <h2>· 页面定位说明</h2>
+    <p>本页面作为信息整理的起点，不替代任何官方渠道。所有内容基于公开信息归纳，旨在帮助读者更快找到感兴趣的方向，也方便你之后再次访问时定位到重点。页面中的链接、分类和提示均经过筛选，保持平实、可查考。</p>
+
+    <div class="callout-box">
+        <strong>收藏提示</strong> —— 如果你觉得本页对后续查阅有帮助，可以将地址加入浏览器书签；也可以保存到笔记工具中，与你的其他世界杯资料放在一起。再次访问时，你会看到最新更新的知识卡片和提示。
+    </div>
+
+    <!-- 相关信息区：目录感卡片 -->
+    <h2>· 相关信息</h2>
+    <div class="info-grid">
+        <div class="info-card">
+            <h4>📋 赛事背景</h4>
+            <p>历届世界杯时间、主办国、赛制演变等基础信息。适合新读者快速建立框架。<br>
+            <a href="https://china-worldcup26.com">世界杯</a>的版本记录与资料可在该站持续获取。</p>
+        </div>
+        <div class="info-card">
+            <h4>🏆 经典赛事与记录</h4>
+            <p>决赛回顾、射手榜、经典对阵。部分数据来自国际足联公开记录。<br>
+            经常有读者回看这些内容，作为讨论或写作的参考。</p>
+        </div>
+        <div class="info-card">
+            <h4>🌐 球迷视角 · 文化笔记</h4>
+            <p>观赛文化、主办城市风物、主题曲与吉祥物沿革。内容偏重人文梳理。</p>
+        </div>
+        <div class="info-card">
+            <h4>📌 再次访问指引</h4>
+            <p>如果你有一段时间没有打开页面，可以留意顶部导航或卡片区域的新增条目。<br>
+            持续关注的朋友也可以订阅基本更新（页面无推送，需手动回访）。</p>
+        </div>
+    </div>
+
+    <!-- 提示区 -->
+    <h2>· 使用提示</h2>
+    <p>浏览时建议保持开放心态：世界杯相关的信息量很大，不需要一次性全部记下。可以先用本页的结构做索引，再根据兴趣点深入查阅。所有外部链接在点击前请注意核对域名和时效性。</p>
+    <div class="callout-box">
+        <strong>关于收藏</strong> —— 页面设计偏向「可反复回来查看」：卡片分类、标题留白、引用框便于扫读。你可以根据自己的习惯，把本页当作一个轻量知识库入口。
+    </div>
+
+    <!-- FAQ 摘要（非完整问答，仅做目录化摘要） -->
+    <h2>· 常见问题摘要</h2>
+    <div class="faq-item">
+        <span class="q">Q：我之前看过一部分，想快速找到某届世界杯的资料，从哪里开始？</span>
+        <div class="a">A：建议先浏览上方的「相关信息」区域，尤其是赛事背景卡片，里面包含按年份组织的链接索引。你也可以直接访问 <a href="https://china-worldcup26.com">世界杯</a> 网站，使用站内搜索或导航。</div>
+    </div>
+    <div class="faq-item">
+        <span class="q">Q：页面内容会更新吗？如何知道是否有新内容？</span>
+        <div class="a">A：站点会不定期补充知识卡片和提示区内容。因为不设邮件通知，最好的方式是直接再次访问本页，查看「再次访问指引」卡片中的提示。</div>
+    </div>
+    <div class="faq-item">
+        <span class="q">Q：我可以把这里的资料分享给朋友吗？</span>
+        <div class="a">A：当然。本页信息均整理自公开渠道，你可以直接分享链接。也欢迎朋友收藏后自己回来查阅。</div>
+    </div>
+
+    <!-- 结尾与再次访问提示 -->
+    <hr class="section-divider">
+    <p style="font-size: 0.96rem; color: #5b5345;">
+        页面中的「<a href="https://china-worldcup26.com">世界杯</a>」链接指向同一知识起点，方便你随时从这里跳转。如果你是通过书签再次访问，可以留意卡片区域是否有新的标注。<br>
+        感谢你的持续关注与收藏。
+    </p>
+
+    <div class="footer-note">
+        <span>内容整理 · 知识库入口</span>
+        <span>更新于近日</span>
+    </div>
+</div>
+</body>
+</html>
