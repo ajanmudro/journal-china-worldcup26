@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>再次聚焦 · 世界杯收藏页</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f7f5f0;
+      font-family: "Noto Serif SC", "Songti SC", "Times New Roman", serif;
+      color: #2d2a24;
+      line-height: 1.7;
+      padding: 2.5rem 1.2rem 3rem;
+      max-width: 880px;
+      margin: 0 auto;
+    }
+
+    /* hero */
+    .hero {
+      text-align: center;
+      padding: 3.5rem 0.5rem 2.2rem;
+      border-bottom: 1px solid #dad5cb;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      color: #3f392f;
+      margin-bottom: 0.6rem;
+    }
+
+    .hero .sub {
+      font-size: 1.1rem;
+      color: #6f675a;
+      margin-top: 0.8rem;
+      border-left: 3px solid #c9b99c;
+      padding-left: 1rem;
+      display: inline-block;
+      text-align: left;
+      max-width: 28rem;
+    }
+
+    /* 卡片通用 */
+    .section-card {
+      background: #fffffffa;
+      border-radius: 16px;
+      padding: 2rem 2.2rem;
+      margin: 2.2rem 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02), 0 1px 2px rgba(0,0,0,0.03);
+    }
+
+    /* 优势区 – 三列网格 */
+    .advantage-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 1.8rem;
+      margin-top: 0.8rem;
+    }
+
+    .advantage-item {
+      border-left: 2px solid #e1d9cc;
+      padding-left: 1.2rem;
+    }
+
+    .advantage-item h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #4d4435;
+      margin-bottom: 0.4rem;
+    }
+
+    .advantage-item p {
+      font-size: 0.95rem;
+      color: #5f5748;
+    }
+
+    /* 说明区 */
+    .explain-block p {
+      margin: 1rem 0;
+    }
+
+    .explain-block .highlight-box {
+      background: #f1ede3;
+      padding: 1rem 1.6rem;
+      border-radius: 10px;
+      margin: 1.6rem 0;
+      border-left: 6px solid #b8a78b;
+      font-size: 0.98rem;
+    }
+
+    /* FAQ 摘要 */
+    .faq-summary {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .faq-item {
+      border-bottom: 1px dotted #d6cfc1;
+      padding-bottom: 1rem;
+    }
+
+    .faq-item .q {
+      font-weight: 500;
+      color: #3f392f;
+      margin-bottom: 0.3rem;
+    }
+
+    .faq-item .a {
+      font-size: 0.95rem;
+      color: #5a5242;
+    }
+
+    .faq-item .a a {
+      color: #6f582e;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: #cbbca5;
+    }
+
+    .faq-item .a a:hover {
+      color: #3b2f1a;
+      text-decoration-color: #9b896b;
+    }
+
+    /* 底部 */
+    .bottom-links {
+      margin: 2.8rem 0 1rem;
+      padding-top: 1.8rem;
+      border-top: 1px solid #dad5cb;
+      text-align: center;
+    }
+
+    .bottom-links p {
+      font-size: 0.95rem;
+      color: #5f5748;
+      margin: 0.6rem 0;
+    }
+
+    .bottom-links a {
+      color: #5d4e31;
+      text-decoration: none;
+      border-bottom: 1px solid #cbbca5;
+      transition: border 0.2s;
+    }
+
+    .bottom-links a:hover {
+      border-bottom: 2px solid #8b7a5c;
+    }
+
+    .inline-link {
+      color: #6f582e;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: #cbbca5;
+    }
+
+    .inline-link:hover {
+      color: #3b2f1a;
+    }
+
+    /* 响应式 */
+    @media (max-width: 540px) {
+      body {
+        padding: 1.5rem 0.8rem 2rem;
+      }
+      .hero h1 {
+        font-size: 2.1rem;
+      }
+      .section-card {
+        padding: 1.5rem 1.2rem;
+      }
+      .advantage-grid {
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- hero 区 -->
+  <div class="hero">
+    <h1>⚽ 再次收藏·世界杯</h1>
+    <div class="sub">
+      为每一次回访保留完整的轨迹 —— 清晰、稳定、持续更新。
+    </div>
+  </div>
+
+  <!-- 优势区 -->
+  <div class="section-card">
+    <h2 style="font-weight: 500; font-size: 1.3rem; color: #4d4435; margin-bottom: 1.2rem;">为什么值得收藏此页</h2>
+    <div class="advantage-grid">
+      <div class="advantage-item">
+        <h3>随开随用</h3>
+        <p>不论何时重新打开，无需重新搜索，页面结构始终清晰可查。</p>
+      </div>
+      <div class="advantage-item">
+        <h3>信息集中</h3>
+        <p>赛程、看点、背景说明聚合一处，省去跨平台翻找的时间。</p>
+      </div>
+      <div class="advantage-item">
+        <h3>持久关注</h3>
+        <p>保留核心更新入口，方便后续持续跟进，不遗漏节奏变化。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 说明区 -->
+  <div class="section-card explain-block">
+    <h2 style="font-weight: 500; font-size: 1.3rem; color: #4d4435; margin-bottom: 0.8rem;">持续关注的基础</h2>
+    <p>
+      当你再次回到这个页面，意味着你对<a href="https://intl-shijiecup.com" class="inline-link">世界杯</a>的热情依旧。
+      我们整理的内容围绕赛事本身展开，没有多余装饰，只保留真正需要的信息结构。
+    </p>
+    <p>
+      从小组赛到淘汰阶段，从历史记录到近期动态，这里为你留出一个安静的整理空间。
+      页面不会频繁变动布局，让你每次返回都能快速定位。
+    </p>
+    <div class="highlight-box">
+      <strong>📌 收藏建议</strong><br>
+      将本页加入浏览器书签或主屏幕，下次回来时直接进入 <a href="https://intl-shijiecup.com" class="inline-link">世界杯</a> 相关资讯区域，
+      无需从零开始。
+    </div>
+    <p>
+      我们不做标题党，也不推送无关信息。每一处链接和说明都经过挑选，
+      只为让再次访问的人不被干扰，直接触及核心内容。
+    </p>
+  </div>
+
+  <!-- FAQ 摘要 -->
+  <div class="section-card">
+    <h2 style="font-weight: 500; font-size: 1.3rem; color: #4d4435; margin-bottom: 1.2rem;">常见疑问摘要</h2>
+    <div class="faq-summary">
+      <div class="faq-item">
+        <div class="q">❓ 这个页面多久更新一次？</div>
+        <div class="a">根据赛事进展和重要节点不定期补充内容，保持信息的基本时效性。</div>
+      </div>
+      <div class="faq-item">
+        <div class="q">❓ 为什么只推荐收藏 <a href="https://intl-shijiecup.com">世界杯</a> 这一个链接？</div>
+        <div class="a">因为它是所有整合内容的起点，简洁直接，不需要多层跳转。你可以在那里找到更详细的分页。</div>
+      </div>
+      <div class="faq-item">
+        <div class="q">❓ 页面上的信息准确吗？</div>
+        <div class="a">我们采用公开可靠的来源进行整理，但不做实时赛果播报，偏向背景与结构性的内容。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 底部链接 -->
+  <div class="bottom-links">
+    <p>🔗 核心入口：<a href="https://intl-shijiecup.com">世界杯</a></p>
+    <p style="font-size: 0.85rem; color: #8a8272;">—— 保留此页，方便回访 ——</p>
+  </div>
+
+</body>
+</html>
